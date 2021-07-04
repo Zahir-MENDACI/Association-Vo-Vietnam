@@ -74,7 +74,7 @@ function Footer() {
                     <img src={instagram} alt="" />
                 </div>
                 <div className="by">
-                    <p>Zahir MENDACI ©</p>
+                    <a href="https://www.linkedin.com/in/zahir-mendaci/" target="_blank">Zahir MENDACI ©</a>
                 </div>
             </div>
         </div>
