@@ -1,0 +1,33 @@
+@import "./Tarifs";
+@import "./Coach";
+@import "./Home";
+@import "./Club";
+@import "./Planning";
+@import "./Navbar";
+@import "./Footer";
+@import "./Covid";
+@import "./darkMode";
+// @import "./Connexion";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+html
+{
+	// font-family: "Roboto Cn", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    button
+    {
+        cursor: pointer;
+    }
+
+}
