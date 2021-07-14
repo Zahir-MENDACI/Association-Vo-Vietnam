@@ -5,6 +5,7 @@ import { NavLink, useHistory } from 'react-router-dom';
 import { ThemeContext } from '../config/Context/ThemeContext';
 import { useAlert } from "react-alert";
 import Logo from '../logo.svg'
+import photo from '../images/images.png'
 
 
 
@@ -37,17 +38,30 @@ const Home = (props) => {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, earum, molestias perferendis corporis assumenda eaque sapiente eum accusamus, repellendus et beatae. Veritatis voluptate blanditiis quod quidem earum. Repellat, excepturi fugiat!
                         </p>
                     </div>
-                    {/* <div className="coachs">
+                    <div className="coachs">
                         <div className="div">
-                            <img src={photo1}/>
-                            <h2>Novak Djokovic</h2>
+                            <img src={photo}/>
+                            <div className="infos">
+                                <h2>Membre 1</h2>
+                                <p>Fonction</p>
+                            </div>
                         </div> 
                         <div className="div">
-                            <img src={photo2}/>
-                            <h2>Serena Williams</h2>
+                            <img src={photo}/>
+                            <div className="infos">
+                                <h2>Membre 2</h2>
+                                <p>Fonction</p>
+                            </div>
+                        </div> 
+                        <div className="div">
+                            <img src={photo}/>
+                            <div className="infos">
+                                <h2>Membre 3</h2>
+                                <p>Fonction</p>
+                            </div>
                         </div> 
                     </div>
-                    <NavLink exact to = "/coach">Plus de details</NavLink>  */}
+                    <NavLink exact to = "/coach">Plus de details</NavLink> 
                 </div>
 {/*                 
                 <div className="planningHome">

@@ -114,11 +114,22 @@
             justify-content: center;
             div
             {
-                width: 50%;
+                width: 30%;
                 display: flex;
                 align-items: center;
                 margin-top: 5vh;
                 gap: 30px;
+                .infos
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0;
+                    h2, p
+                    {
+                        margin: 0;
+                    }
+                }
                 img
                 {
                     width: 150px;
