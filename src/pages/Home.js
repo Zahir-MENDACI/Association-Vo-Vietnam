@@ -26,7 +26,7 @@ const Home = (props) => {
                 
 
                 <div className="CoachHome">
-                    <h1>Association Sportive Vo Vietnam Azazga</h1>
+                    <h1>Ecole de Võ-Việt-Nam Sơn Long Quyền Thuật Azazga</h1>
                     <div>
                         <p>
                             
