@@ -11,7 +11,6 @@ const Membres = () => {
     const {theme} = useContext(ThemeContext) 
     return (
             <div className={theme ? "contenu light" : "contenu dark"}>
-                <Navbar />
                 <div class="Coach">
                     <div className="cardsContainer">
                         {data.map((dat) => 
@@ -27,7 +26,7 @@ const Membres = () => {
                         })}
                     </div>
                 </div>
-                <Footer />
+                {/* <Footer /> */}
             </div>
     )
 }

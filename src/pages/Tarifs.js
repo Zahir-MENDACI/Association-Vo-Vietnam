@@ -6,7 +6,6 @@ const Tarifs = () => {
     const {theme} = useContext(ThemeContext) 
     return (
         <div className={theme ? "contenu light" : "contenu dark"}>
-            <Navbar/>
             <div className="Tarifs">
                 <div className="cardsContainer">
                     <div className="card">

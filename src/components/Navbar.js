@@ -11,17 +11,6 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  useEffect(() => {
-    const auth = localStorage.getItem("Authentification");
-    if (auth) {
-      setIsLogged(true);
-      console.log("auth = ", auth);
-      console.log("is logged = ", isLogged);
-    } else {
-      console.log("their is no  Authentification items! ", auth);
-    }
-    console.log("is logged = ", isLogged);
-  }, []);
 
   function toggleMobileMenu() {
     document.querySelector(".mobile-bar").classList.toggle("active");
@@ -46,13 +35,18 @@ const Navbar = () => {
       <nav>
         <ul className={click ? "nav-options active" : "nav-options"}>
           <li>
-            <NavLink exact to="/accueil" onClick={closeMobileMenu}>
+            <NavLink exact to="/" onClick={closeMobileMenu}>
               Accueil
             </NavLink>
           </li>
           <li>
             <NavLink exact to="/club" onClick={closeMobileMenu}>
               Qui sommes-nous
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/ecole" onClick={closeMobileMenu}>
+              Vo Vietnam
             </NavLink>
           </li>
           <li>

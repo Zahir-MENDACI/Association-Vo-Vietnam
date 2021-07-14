@@ -10,7 +10,6 @@ const Planning = () => {
     const {theme} = useContext(ThemeContext) 
     return (
         <div className={theme ? "contenu light" : "contenu dark"}>
-            <Navbar/>
             <div className="Planning">
                 <div className="groupe1">
                     <h1>Groupe 1</h1>
@@ -33,7 +32,7 @@ const Planning = () => {
                     <p>Samedi:   17h30 - 19h30</p>
                 </div>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 };

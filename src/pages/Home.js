@@ -4,31 +4,20 @@ import Footer from '../components/Footer';
 import { NavLink, useHistory } from 'react-router-dom';
 import { ThemeContext } from '../config/Context/ThemeContext';
 import { useAlert } from "react-alert";
+import Logo from '../logo.svg'
 
 
 
 const Home = (props) => {
-    const d = new Date()
-    const history = useHistory()
+    
     const {theme} = useContext(ThemeContext) 
-    console.log(props.match.params.params)
-    const alert = useAlert();
 
-    if (props.match.params.params === "succeed")
-    {
-        alert.success("Payement réussi!")
-    }
-    if (props.match.params.params === "canceled")
-    {
-        alert.error("Payement annulé!");
-    }
     return (
         <div className={theme ? "contenu light" : "contenu dark"}>
-            <Navbar/>
                 <div className="Home">
                     <div className="homeContent">
-                        {/* <img src={Logo}/>
-                        <div class="btndiv">
+                        <img src={Logo}/>
+                        {/* <div class="btndiv">
                             <button class="button" onClick={() => history.push('/planning')}>Consulter planning</button>
                             <button class="button" onClick={() => history.push('/abonnement')}>Prendre un abonnement</button>
                         </div> */}
@@ -36,10 +25,10 @@ const Home = (props) => {
                 
 
                 <div className="CoachHome">
-                    <h1>Association Vo Vietnam</h1>
+                    <h1>Association Sportive Vo Vietnam Azazga</h1>
                     <div>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae asperiores expedita quos quae officia ab ratione consectetur corrupti rerum aliquid? Animi enim quibusdam aut esse blanditiis repellendus ut modi nostrum!
+                            
                         </p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat blanditiis porro suscipit veniam quas quidem quasi vel! Architecto, deserunt molestias soluta atque nobis, suscipit ullam non hic commodi vero obcaecati.
@@ -76,10 +65,7 @@ const Home = (props) => {
                     <NavLink exact to = "/planning">Plus de details</NavLink>
                 </div> */}
                 </div>
-            <Footer />
-                {/* <Banner />
-                <Info />
-                <Coach /> */}
+            {/* <Footer /> */}
         </div>
     );
 };
