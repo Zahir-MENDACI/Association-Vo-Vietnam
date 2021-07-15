@@ -1,9 +1,6 @@
 import React, { useContext } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { NavLink, useHistory } from 'react-router-dom';
 import { ThemeContext } from '../config/Context/ThemeContext';
-import { useAlert } from "react-alert";
 import Logo from '../logo.svg'
 import photo from '../images/images.png'
 
