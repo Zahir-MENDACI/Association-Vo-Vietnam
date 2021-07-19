@@ -15,6 +15,12 @@ function Footer() {
     }
 
     const [contact, setContact] = useState(contactTemplate)
+    const [showInfo, setShowInfo] = useState(false)
+
+    const handleInfo= () => 
+    {
+        setShowInfo(!showInfo)
+    }
 
 
     console.log(contact.nom)
@@ -73,8 +79,22 @@ function Footer() {
                     <img src={facebook} alt="" />
                     <img src={instagram} alt="" />
                 </div>
-                <div className="by">
-                    <a href="https://www.linkedin.com/in/zahir-mendaci/" target="_blank">Zahir MENDACI ©</a>
+                <div className="by" onClick={() =>handleInfo()}>
+                    <p className="ZM">Zahir MENDACI ©</p>
+                    {
+                        showInfo && (
+                                <div className="showInfos">
+                                    <div className="infosContent">
+                                        <h3>Zahir MENDACI</h3>
+                                        <a href="https://www.linkedin.com/in/zahir-mendaci/" target="_blank">LinkedIn</a><br />
+                                        <a href="https://github.com/Zahir-MENDACI/" target="_blank">Github</a>
+                                        <div className="button return" onClick={handleInfo}>
+                                            Retourner sur la page
+                                        </div>
+                                    </div>
+                                </div>
+                        )
+                    }
                 </div>
             </div>
         </div>

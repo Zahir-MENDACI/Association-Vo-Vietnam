@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { NavLink, useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { ThemeContext } from '../config/Context/ThemeContext';
 import Logo from '../logo.svg'
 import photo from '../images/images.png'
@@ -9,6 +9,7 @@ import photo from '../images/images.png'
 const Home = (props) => {
     
     const {theme} = useContext(ThemeContext) 
+    console.log(window.document.body.offsetHeight)
 
     return (
         <div className={theme ? "contenu light" : "contenu dark"}>
@@ -58,7 +59,7 @@ const Home = (props) => {
                             </div>
                         </div> 
                     </div>
-                    <NavLink exact to = "/coach">Plus de details</NavLink> 
+                    <Link exact to = "/membres">Plus de details</Link> 
                 </div>
 {/*                 
                 <div className="planningHome">
