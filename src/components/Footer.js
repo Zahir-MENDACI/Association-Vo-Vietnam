@@ -59,11 +59,11 @@ function Footer() {
             <div className="contactEmail">
                 <div class="info">
                     <h5> Adresse: </h5>
-                    Auberge des jeunes Azazga
+                    Salle des arts martiaux, CSP Azazga
                     <h5> Telephone: </h5>
-                    0123456789
+                    +213 552 557 724
                     <h5> Email: </h5>
-                    test@gmail.com
+                    slqtazazga.1@gmail.com
                 </div>
                 <div class="form">
                     <h2>Contact</h2>
